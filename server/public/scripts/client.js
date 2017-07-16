@@ -20,7 +20,7 @@ var switzerland = new Image('Switzerland', 'pictures/Switzerland2.jpg', 'Climbin
 var architecture = new Image('Architecture Concept Art', 'pictures/arch.png', 'Concept drawings for one of my architecture projects.');
 var warcraft = new Image('Warcraft', 'pictures/warcraft3b.jpg', 'Warcraft 3 - My favorite game of all time.');
 
-console.log(myImages);
+console.log('Array of Images:', myImages);
 // End of creating images array
 
 
@@ -32,7 +32,7 @@ myApp.controller('imagesController', function(){
   console.log('angular sourced');
 
   var myController = this;
-  console.log(myController);
+  console.log('Logging imagesController:', myController);
   myController.arrImages = myImages;
 });
 // End of Angular controller
