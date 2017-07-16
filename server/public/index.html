@@ -12,7 +12,7 @@
       <div ng-repeat="image in myController.arrImages">
           <img src="{{image.path}}" alt="{{image.name}}">
           <p>{{image.description}}</p>
-          <button>Love it!</button>
+          <button ng-click="myController.increment($index)">Love it!</button>
           <p>Number of likes: {{image.likes}}</p>
       </div>
     </div>

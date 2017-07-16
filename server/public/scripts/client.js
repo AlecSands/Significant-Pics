@@ -34,5 +34,12 @@ myApp.controller('imagesController', function(){
   var myController = this;
   console.log('Logging imagesController:', myController);
   myController.arrImages = myImages;
+  myController.increment = incrementLikes;
+
+  function incrementLikes(index) {
+    myController.arrImages[index].likes += 1;
+  }
 });
 // End of Angular controller
+
+// Increment likes by 1
