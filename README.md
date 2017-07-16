@@ -15,10 +15,20 @@ Create a gallery of 6 or more pictures of significance to you. When someone clic
 ### Task list for Significant-Pics
 
 - [ ] Setup folders, file locations, and server.js with pathing to index.html.
-- [ ] Setup folders, file locations, and server.js with pathing to index.html.
-- [ ] Setup folders, file locations, and server.js with pathing to index.html.
-- [ ] Setup folders, file locations, and server.js with pathing to index.html.
-- [ ] Setup folders, file locations, and server.js with pathing to index.html.
-- [ ] Setup folders, file locations, and server.js with pathing to index.html.
-- [ ] Setup folders, file locations, and server.js with pathing to index.html.
-- [ ] Setup folders, file locations, and server.js with pathing to index.html.
+- [x] Find 6 images with significance to me.
+- [ ] Add them to a js array.
+- [ ] Use an ng-repeater to add them to the DOM.
+- [ ] Add buttons and placeholder counter text to each image using ng-repeater.
+- [ ]
+- [ ] Complete setup of basic page on load with html.
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ] Complete setup of click which displays text describing significance.
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ] Complete setup of tracking number of likes for each photo.
+- [ ]  
