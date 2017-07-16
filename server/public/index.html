@@ -2,21 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Significant Images</title>
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap-theme.css">
     <link rel="stylesheet" href="/view/style.css">
     <script type="text/javascript" src="vendors/angular.js"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
   </head>
   <body ng-app="myApp">
-    <h1>My Images</h1>
-    <div ng-controller="imagesController as myController">
-      <div ng-repeat="image in myController.arrImages">
-          <div class="imgLocate" ng-click="myController.visible($index)">
-            <img ng-show=image.vis src="{{image.path}}" alt="{{image.name}}">
-            <p class="description" ng-hide=image.vis>{{image.description}}</p>
-          </div>
-          <button ng-click="myController.increment($index)">Love it!</button>
-          <p>Number of likes: {{image.likes}}</p>
+    <div class="container">
+      <h1>My Images</h1>
+      <div ng-controller="imagesController as myController">
+        <div ng-repeat="image in myController.arrImages" class="col-lg-6 repeat">
+            <div class="imgLocate" ng-click="myController.visible($index)">
+              <img ng-show=image.vis src="{{image.path}}" alt="{{image.name}}">
+              <p class="description" ng-hide=image.vis>{{image.description}}</p>
+            </div>
+            <button class="btn-primary" ng-click="myController.increment($index)">Love it!</button>
+            <p class="likes">Number of likes: {{image.likes}}</p>
+        </div>
       </div>
     </div>
   </body>

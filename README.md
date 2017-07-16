@@ -19,16 +19,7 @@ Create a gallery of 6 or more pictures of significance to you. When someone clic
 - [x] Add images to a js array.
 - [x] Use an ng-repeater to add them to the DOM with text and buttons.
 - [x] Add button function which increments likes by 1 on click.
-- [ ]
-- [ ] Complete setup of basic page on load with html.
-- [ ]
-- [ ]
+- [x] Complete setup of click which displays text describing significance.
+- [x] Add bootstrap styling.
 - [ ]
 - [ ]
-- [ ] Complete setup of click which displays text describing significance.
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ] Complete setup of tracking number of likes for each photo.
-- [ ]  
