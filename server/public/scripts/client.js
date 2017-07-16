@@ -10,6 +10,7 @@ function Image(name, path, description) {
   this.path = path;
   this.description = description;
   this.likes = 0;
+  this.vis = true;
   myImages.push(this);
 }
 
@@ -35,11 +36,18 @@ myApp.controller('imagesController', function(){
   console.log('Logging imagesController:', myController);
   myController.arrImages = myImages;
   myController.increment = incrementLikes;
+  myController.visible = visible;
 
+  // Increment likes by 1
   function incrementLikes(index) {
     myController.arrImages[index].likes += 1;
   }
+
+  // Toggle visibility of images and descriptions
+  function visible(index) {
+    console.log('Clicked an image');
+    myController.arrImages[index].vis = !myController.arrImages[index].vis;
+    console.log(myController.arrImages);
+  }
 });
 // End of Angular controller
-
-// Increment likes by 1
