@@ -8,8 +8,12 @@
   </head>
   <body ng-app="myApp">
     <h1>My Images</h1>
-    <div ng-controller="readyController as ready">
-
+    <div ng-controller="imagesController as myController">
+      <div ng-repeat="image in myController.arrImages">
+          <img src="{{image.path}}" alt="{{image.name}}">
+          <p>{{image.description}}</p>
+          <button>Love it!</button>
+      </div>
     </div>
   </body>
 </html>

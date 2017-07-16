@@ -16,9 +16,9 @@ Create a gallery of 6 or more pictures of significance to you. When someone clic
 
 - [x] Setup folders, file locations, and server.js with pathing to index.html.
 - [x] Find 6 images with significance to me.
-- [ ] Add images to a js array.
-- [ ] Use an ng-repeater to add them to the DOM.
-- [ ] Add buttons and placeholder counter text to each image using ng-repeater.
+- [x] Add images to a js array.
+- [x] Use an ng-repeater to add them to the DOM with text and buttons.
+- [ ] 
 - [ ]
 - [ ] Complete setup of basic page on load with html.
 - [ ]
