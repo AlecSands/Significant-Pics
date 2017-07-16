@@ -14,7 +14,7 @@ Create a gallery of 6 or more pictures of significance to you. When someone clic
 
 ## Task list for Significant-Pics
 
-- [ ] Setup folders, file locations, and server.js with pathing to index.html.
+- [x] Setup folders, file locations, and server.js with pathing to index.html.
 - [x] Find 6 images with significance to me.
 - [ ] Add images to a js array.
 - [ ] Use an ng-repeater to add them to the DOM.
