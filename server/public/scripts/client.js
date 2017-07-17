@@ -11,6 +11,8 @@ function Image(name, path, description) {
   this.description = description;
   this.likes = 0;
   this.vis = true;
+  this.comments = [];
+  this.showComments = false;
   myImages.push(this);
 }
 
@@ -37,6 +39,8 @@ myApp.controller('imagesController', function(){
   myController.arrImages = myImages;
   myController.increment = incrementLikes;
   myController.visible = visible;
+  myController.addComment = addComment;
+  myController.showComments = showComments;
 
   // Increment likes by 1
   function incrementLikes(index) {
@@ -48,6 +52,17 @@ myApp.controller('imagesController', function(){
     console.log('Clicked an image');
     myController.arrImages[index].vis = !myController.arrImages[index].vis;
     console.log(myController.arrImages);
+  }
+
+  // Add comment to comments array
+  function addComment(index, comment) {
+    myController.arrImages[index].comments.push(comment);
+    console.log(myController.arrImages[index].comments);
+  }
+
+  // Show comments
+  function showComments(index) {
+    myController.arrImages[index].showComments = !myController.arrImages[index].showComments;
   }
 });
 // End of Angular controller

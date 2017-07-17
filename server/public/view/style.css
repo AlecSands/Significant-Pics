@@ -9,6 +9,8 @@
   font-size: 36px;
   word-wrap: break-word;
   text-align: center;
+  margin-top: 50%;
+  margin-bottom: 50%;
 }
 
 .btn-primary {
@@ -24,6 +26,19 @@
 
 .likes {
   font-size: 30px;
+}
+
+.comment {
+  width: 500px;
+  margin-bottom: 5px;
+}
+
+.btn-group {
+  width: 500px;
+}
+
+.btn {
+  width: 250px;
 }
 
 img {

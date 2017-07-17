@@ -21,5 +21,5 @@ Create a gallery of 6 or more pictures of significance to you. When someone clic
 - [x] Add button function which increments likes by 1 on click.
 - [x] Complete setup of click which displays text describing significance.
 - [x] Add bootstrap styling.
-- [ ]
-- [ ]
+- [x] Create comments array for each picture and add input field and buttons.
+- [x] Hide and show comments on button click

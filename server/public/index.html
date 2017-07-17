@@ -22,6 +22,14 @@
             </div>
             <button class="btn-primary" ng-click="myController.increment($index)">Love it!</button>
             <p class="likes">Number of likes: {{image.likes}}</p>
+            <input class="comment" type="text" ng-model="comment" placeholder="Type new comment here!">
+            <div class="btn-group">
+              <button class="btn btn-info" ng-click="myController.addComment($index, comment)">Add comment</button>
+              <button class="btn btn-info" ng-click="myController.showComments($index)">Show comments</button>
+            </div>
+            <div ng-repeat="comment in image.comments track by $index" ng-show=image.showComments>
+              <p>"{{comment}}"</p>
+            </div>
         </div>
       </div>
     </div>
